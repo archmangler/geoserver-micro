@@ -27,12 +27,14 @@ datastores = geoserver.get_data_stores(workspace=the_workspace)
 print("Listing datastores: ",datastores)
 
 # Upload a Shapefile
-geoserver.upload_data_store(file="./gis-osm/gis_osm_water_a_free_1.shp", workspace="antedeluvian")
+#geoserver.upload_data_store(file="./gis-osm/gis_osm_water_a_free_1.shp", workspace="antedeluvian")
 #NOTE: At this point you should have a layer
 
 #Add another layer from a shapefile
-geoserver.upload_data_store(file="./gis-osm/gis_osm_buildings_a_free_1.shp", workspace="antedeluvian")
+#geoserver.upload_data_store(file="./gis-osm/gis_osm_buildings_a_free_1.shp", workspace="antedeluvian")
 
 # Upload a GeoTIFF
-geoserver.upload_coverage_store(file="./", format="geotiff", workspace="my_workspace")
+geoserver.upload_coverage_store(file="./geotiff-sample.tif", format="geotiff", workspace="antedeluvian")
+
+
 
